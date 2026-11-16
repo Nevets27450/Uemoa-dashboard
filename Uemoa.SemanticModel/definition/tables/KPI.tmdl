@@ -1,0 +1,82 @@
+table KPI
+	lineageTag: 7d51368e-a58c-4dee-8a99-b6191f6b800d
+
+	measure Rang_Indic = VAR Choix = SELECTEDVALUE('KPI'[Indicateur], "PIB") RETURN SWITCH(Choix, "PIB", [Rang_PIB], "PIB par habitant", [Rang_PIB_habitant], "Importation", [Rang_Import], "Exportation", [Rang_Export])
+		formatString: 0
+		lineageTag: c304ded7-b40b-4176-b690-52dcf8d93ebc
+
+	/// Classement du Bénin parmi tous les pays, en conservant le contexte d’année et d’indicateur.
+	measure Rang_Benin = ```
+
+			VAR ValeurBenin = CALCULATE([Valeur_Indic], REMOVEFILTERS('donnees_uemoa_large'[Pays]), 'donnees_uemoa_large'[Pays] = "Bénin")
+			VAR PaysComparables = CALCULATETABLE(VALUES('donnees_uemoa_large'[Pays]), REMOVEFILTERS('donnees_uemoa_large'[Pays]))
+			RETURN IF(NOT ISBLANK(ValeurBenin), RANKX(PaysComparables, CALCULATE([Valeur_Indic]), ValeurBenin, DESC, Skip))
+
+			```
+		formatString: 0
+		displayFolder: Classements
+		lineageTag: 8995a6d9-fc69-422e-a973-438cc46b77f6
+
+	measure 'Vue PIB' = VAR Annee = MAX('donnees_uemoa_large'[Année]) RETURN CALCULATE(SUM('donnees_uemoa_large'[PIB (USD)]), 'donnees_uemoa_large'[Année] = Annee)
+		formatString: #,0,,,.0" Md USD"
+		displayFolder: Récit de données
+		lineageTag: 97032f77-3cc2-4210-809b-faf000730019
+
+	measure 'Vue Population' = VAR Annee = MAX('donnees_uemoa_large'[Année]) RETURN CALCULATE(SUM('donnees_uemoa_large'[Population totale]), 'donnees_uemoa_large'[Année] = Annee)
+		formatString: #,0,,.0" M"
+		displayFolder: Récit de données
+		lineageTag: 328809b9-caf6-456b-a515-29c884a68261
+
+	measure 'Vue PIB habitant' = DIVIDE([Vue PIB], [Vue Population])
+		formatString: #,0" USD"
+		displayFolder: Récit de données
+		lineageTag: 15bdcebf-e410-47d6-9fef-37ea15fca99c
+
+	measure 'Vue Importations' = VAR Annee = MAX('donnees_uemoa_large'[Année]) RETURN CALCULATE(DIVIDE(SUMX('donnees_uemoa_large', 'donnees_uemoa_large'[Importations] * 'donnees_uemoa_large'[PIB (USD)]), SUM('donnees_uemoa_large'[PIB (USD)])), 'donnees_uemoa_large'[Année] = Annee)
+		formatString: 0.0" %"
+		displayFolder: Récit de données
+		lineageTag: 92d41bcc-30b6-429e-a566-457f31cf275a
+
+	measure 'Vue Exportations' = VAR Annee = MAX('donnees_uemoa_large'[Année]) RETURN CALCULATE(DIVIDE(SUMX('donnees_uemoa_large', 'donnees_uemoa_large'[Exportations] * 'donnees_uemoa_large'[PIB (USD)]), SUM('donnees_uemoa_large'[PIB (USD)])), 'donnees_uemoa_large'[Année] = Annee)
+		formatString: 0.0" %"
+		displayFolder: Récit de données
+		lineageTag: 833d14d3-1dbf-45d7-88d8-67d11a765c1b
+
+	measure 'Vue Annee' = MAX('donnees_uemoa_large'[Année])
+		formatString: 0
+		displayFolder: Récit de données
+		lineageTag: ec8b327d-855f-4c32-b725-61784f686faf
+
+	/// Rang du Bénin uniquement dans le contexte du pays Bénin. Série dorée du visuel de classement.
+	measure 'Rang Focus Benin' = IF(SELECTEDVALUE('donnees_uemoa_large'[Pays]) = "Bénin", [Rang_Indic], BLANK())
+		formatString: 0
+		displayFolder: Classements
+		lineageTag: e8b70da4-b43f-46ab-ad96-2a9a3986aae9
+
+	/// Rang des autres pays, vide pour le Bénin. Série verte du visuel de classement.
+	measure 'Rang Autres Pays' = IF(HASONEVALUE('donnees_uemoa_large'[Pays]) && SELECTEDVALUE('donnees_uemoa_large'[Pays]) <> "Bénin", [Rang_Indic], BLANK())
+		formatString: 0
+		displayFolder: Classements
+		lineageTag: b7b27750-dcd4-4da9-a1f5-3817bfc8cf92
+
+	column Indicateur
+		dataType: string
+		lineageTag: d463d4b4-3ba7-48ab-90ca-cf7edd327436
+		summarizeBy: none
+		sourceColumn: Indicateur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition KPI = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WCvB0UorVAdMKBYlFChmJSZkliXklYEHP3IL8opLEksz8PDDftQKJHwsA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Colonne 1" = _t]),
+				    #"Type modifié" = Table.TransformColumnTypes(Source,{{"Colonne 1", type text}}),
+				    #"Colonnes renommées" = Table.RenameColumns(#"Type modifié",{{"Colonne 1", "Indicateur"}})
+				in
+				    #"Colonnes renommées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation

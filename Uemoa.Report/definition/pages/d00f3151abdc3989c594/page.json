@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "d00f3151abdc3989c594",
+  "displayName": "Focus Bénin",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F3F6F5'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F3F6F5'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "5e7eb1facd4a8914c6bd",
+      "target": "411cf23fc763cd981b8c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5e7eb1facd4a8914c6bd",
+      "target": "8cdd8c3c8a1b6c821d95",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5e7eb1facd4a8914c6bd",
+      "target": "c0139122add696cffdf8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5e7eb1facd4a8914c6bd",
+      "target": "f86c6f8c452178d4145c",
+      "type": "NoFilter"
+    }
+  ]
+}

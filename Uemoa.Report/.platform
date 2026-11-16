@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Uemoa"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9f402a73-9b67-415e-b255-43384b520c21"
+  }
+}

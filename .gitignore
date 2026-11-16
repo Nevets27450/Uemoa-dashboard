@@ -1,0 +1,13 @@
+# Données locales et caches Power BI
+**/.pbi/
+*.pbix
+*.pbit
+**/*.csv
+
+# Secrets, dépendances et fichiers temporaires
+.env
+.env.*
+!.env.example
+**/node_modules/
+*.tmp
+~$*

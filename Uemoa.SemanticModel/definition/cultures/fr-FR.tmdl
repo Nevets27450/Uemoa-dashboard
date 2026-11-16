@@ -1,0 +1,2406 @@
+cultureInfo fr-FR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "donnees_uemoa_large": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "donnees uemoa large": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "donnee uemoa large": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "donnees_uemoa_large": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.pay": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Pays"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "pay": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "salary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reimbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "compensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "remuneration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "emolument": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "stipend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "wage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "recompense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Pays": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.code_pay": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Code_Pays"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "code pay": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Code_Pays": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "id pay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "key pay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "code salary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "code reimbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "code compensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "code remuneration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "code emolument": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "code stipend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "code wage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "code recompense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.pib_usd": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "PIB (USD)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pib (usd)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pib": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.PIB_par_habitant_USD": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "PIB par habitant (USD)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PIB par habitant (USD)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PIB par habitant": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.population_totale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Population totale"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "population totale": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.population_masculine": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Population masculine"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "population masculine": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "masculine": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "male": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "macho": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.population_féminine": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Population féminine"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "population féminine": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.exportations__PIB": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Exportations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "exportations (% PIB)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "exportation (% PIB)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "exportations": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "exportation ( percentage pib)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "exportation ( pct pib)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.importations__PIB": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Importations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "importations (% PIB)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "importation (% PIB)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "importations": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "importation ( percentage pib)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "importation ( pct pib)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.PIB_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "PIB_total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PIB total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PIB_total": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pib aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "pib overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.PIB_par_habitant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "PIB_par_habitant"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PIB par habitant": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PIB_par_habitant": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "habitant": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "par habitant": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.import_PIB": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Import_PIB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "import PIB": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Import_PIB": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "PIB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.export_PIB": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Export_PIB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "export PIB": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Export_PIB": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "PIB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "smig_uemoa_2024"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "smig uemoa 2024": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "smig_uemoa_2024": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024.pay": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "smig_uemoa_2024",
+			          "ConceptualProperty": "Pays"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pay": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "salary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reimbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "compensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "remuneration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "emolument": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "stipend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "wage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "recompense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Pays": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024.code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "smig_uemoa_2024",
+			          "ConceptualProperty": "Code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024.smig_fcfa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "smig_uemoa_2024",
+			          "ConceptualProperty": "SMIG_FCFA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "smig fcfa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SMIG_FCFA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "smig_uemoa_2024",
+			          "ConceptualProperty": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024.smig_eur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "smig_uemoa_2024",
+			          "ConceptualProperty": "SMIG_EUR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "smig eur": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SMIG_EUR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024.smig_usd": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "smig_uemoa_2024",
+			          "ConceptualProperty": "SMIG_USD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "smig usd": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SMIG_USD": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024.SMIG_année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "smig_uemoa_2024",
+			          "ConceptualProperty": "SMIG_Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SMIG année": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SMIG_Année": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.rang_PIB_habitant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Rang_PIB_habitant"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rang PIB habitant": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Rang_PIB_habitant": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.rang_import": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Rang_Import"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rang import": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Rang_Import": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rang introduction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rang importation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rang ingress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rang significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "rang importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "rang consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "rang solemnity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "rang seriousness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "rang weight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "rang meaning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.rang_export": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Rang_Export"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rang export": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Rang_Export": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large.valeur_indic": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "donnees_uemoa_large",
+			          "ConceptualProperty": "Valeur_Indic"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valeur indic": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Valeur_Indic": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "kpi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kpi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "kpi.indicateur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI",
+			          "ConceptualProperty": "Indicateur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicateur": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "kpi.rang_indic": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI",
+			          "ConceptualProperty": "Rang_Indic"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rang indic": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Rang_Indic": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Rang": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kpi.vue_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI",
+			          "ConceptualProperty": "Vue Population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vue Population": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kpi.vue_pib": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI",
+			          "ConceptualProperty": "Vue PIB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vue PIB": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kpi.vue_pib_habitant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI",
+			          "ConceptualProperty": "Vue PIB habitant"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PIB par habitant": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Vue PIB habitant": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kpi.vue_exportations": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI",
+			          "ConceptualProperty": "Vue Exportations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vue Exportations": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kpi.vue_importations": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI",
+			          "ConceptualProperty": "Vue Importations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vue Importations": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kpi.rang_focus_benin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI",
+			          "ConceptualProperty": "Rang Focus Benin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Bénin": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kpi.rang_autres_pays": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPI",
+			          "ConceptualProperty": "Rang Autres Pays"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Autres pays": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024.smig_annuel_usd": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "smig_uemoa_2024",
+			          "ConceptualProperty": "SMIG annuel USD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SMIG annuel USD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "smig_uemoa_2024_has_smig_usd": {
+			      "Binding": {
+			        "ConceptualEntity": "smig_uemoa_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "smig_uemoa_2024": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024"
+			          }
+			        },
+			        "smig_uemoa_2024.smig_usd": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024.smig_usd"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "smig_uemoa_2024"
+			            },
+			            "Object": {
+			              "Role": "smig_uemoa_2024.smig_usd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "smig_uemoa_2024_have_smig_usd"
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024_has_smig_eur": {
+			      "Binding": {
+			        "ConceptualEntity": "smig_uemoa_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "smig_uemoa_2024": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024"
+			          }
+			        },
+			        "smig_uemoa_2024.smig_eur": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024.smig_eur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "smig_uemoa_2024"
+			            },
+			            "Object": {
+			              "Role": "smig_uemoa_2024.smig_eur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "smig_uemoa_2024_have_smig_eurs"
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024_has_année": {
+			      "Binding": {
+			        "ConceptualEntity": "smig_uemoa_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "smig_uemoa_2024": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024"
+			          }
+			        },
+			        "smig_uemoa_2024.année": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024.année"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "smig_uemoa_2024"
+			            },
+			            "Object": {
+			              "Role": "smig_uemoa_2024.année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "smig_uemoa_2024_have_années"
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024_has_smig_fcfa": {
+			      "Binding": {
+			        "ConceptualEntity": "smig_uemoa_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "smig_uemoa_2024": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024"
+			          }
+			        },
+			        "smig_uemoa_2024.smig_fcfa": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024.smig_fcfa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "smig_uemoa_2024"
+			            },
+			            "Object": {
+			              "Role": "smig_uemoa_2024.smig_fcfa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "smig_uemoa_2024_have_smig_fcfas"
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024_has_code": {
+			      "Binding": {
+			        "ConceptualEntity": "smig_uemoa_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "smig_uemoa_2024": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024"
+			          }
+			        },
+			        "smig_uemoa_2024.code": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024.code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "smig_uemoa_2024"
+			            },
+			            "Object": {
+			              "Role": "smig_uemoa_2024.code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "smig_uemoa_2024_have_codes"
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024_has_pay": {
+			      "Binding": {
+			        "ConceptualEntity": "smig_uemoa_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "smig_uemoa_2024": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024"
+			          }
+			        },
+			        "smig_uemoa_2024.pay": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024.pay"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "smig_uemoa_2024"
+			            },
+			            "Object": {
+			              "Role": "smig_uemoa_2024.pay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "smig_uemoa_2024_have_pays"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_rang_PIB": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.rang_PIB": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.rang_PIB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.rang_PIB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_rang_PIB"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_export_PIB": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.export_PIB": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.export_PIB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.export_PIB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_export_PIB"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_import_PIB": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.import_PIB": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.import_PIB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.import_PIB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_import_PIB"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_PIB_par_habitant": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.PIB_par_habitant": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.PIB_par_habitant"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.PIB_par_habitant"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_PIB_par_habitant"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_PIB_total": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.PIB_total": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.PIB_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.PIB_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_PIB_total"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_importations__PIB": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.importations__PIB": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.importations__PIB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.importations__PIB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_importations__PIB"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_exportations__PIB": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.exportations__PIB": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.exportations__PIB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.exportations__PIB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_exportations__PIB"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_population_féminine": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.population_féminine": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.population_féminine"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.population_féminine"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_population_féminines"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_population_masculine": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.population_masculine": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.population_masculine"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.population_masculine"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_population_masculines"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_population_totale": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.population_totale": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.population_totale"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.population_totale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_population_totales"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_PIB_par_habitant_USD": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.PIB_par_habitant_USD": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.PIB_par_habitant_USD"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.PIB_par_habitant_USD"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_PIB_par_habitant_USD"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "donnees_uemoa_large.PIB_par_habitant_USD"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PIB_par_habitant_USD_indicates_how_expensive_donnees_uemoa_large_are"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_pib_usd": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.pib_usd": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.pib_usd"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.pib_usd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_pib_usd"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "donnees_uemoa_large.pib_usd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pib_usd_indicates_how_expensive_donnees_uemoa_large_are"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_année": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.année": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.année"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_années"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_code_pay": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.code_pay": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.code_pay"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.code_pay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_code_pays"
+			        }
+			      ]
+			    },
+			    "smig_uemoa_2024_has_SMIG_année": {
+			      "Binding": {
+			        "ConceptualEntity": "smig_uemoa_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "smig_uemoa_2024": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024"
+			          }
+			        },
+			        "smig_uemoa_2024.SMIG_année": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024.SMIG_année"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "smig_uemoa_2024"
+			            },
+			            "Object": {
+			              "Role": "smig_uemoa_2024.SMIG_année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "smig_uemoa_2024_have_SMIG_années"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_rang_PIB_habitant": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.rang_PIB_habitant": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.rang_PIB_habitant"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.rang_PIB_habitant"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_rang_PIB_habitant"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_rang_import": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.rang_import": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.rang_import"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.rang_import"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_rang_import"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_rang_export": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.rang_export": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.rang_export"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.rang_export"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_rang_export"
+			        }
+			      ]
+			    },
+			    "kpi_has_donnees_uemoa_large_valeur_indic": {
+			      "Binding": {
+			        "ConceptualEntity": "KPI"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kpi": {
+			          "Target": {
+			            "Entity": "kpi"
+			          }
+			        },
+			        "donnees_uemoa_large.valeur_indic": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.valeur_indic"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpi"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.valeur_indic"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpis_have_valeur_indic"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_valeur_indic": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "donnees_uemoa_large.valeur_indic": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large.valeur_indic"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large.valeur_indic"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_valeur_indic"
+			        }
+			      ]
+			    },
+			    "kpi_has_indicateur": {
+			      "Binding": {
+			        "ConceptualEntity": "KPI"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kpi": {
+			          "Target": {
+			            "Entity": "kpi"
+			          }
+			        },
+			        "kpi.indicateur": {
+			          "Target": {
+			            "Entity": "kpi.indicateur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpi"
+			            },
+			            "Object": {
+			              "Role": "kpi.indicateur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpis_have_indicateurs"
+			        }
+			      ]
+			    },
+			    "kpi_has_rang_indic": {
+			      "Binding": {
+			        "ConceptualEntity": "KPI"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kpi": {
+			          "Target": {
+			            "Entity": "kpi"
+			          }
+			        },
+			        "kpi.rang_indic": {
+			          "Target": {
+			            "Entity": "kpi.rang_indic"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpi"
+			            },
+			            "Object": {
+			              "Role": "kpi.rang_indic"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpis_have_rang_indic"
+			        }
+			      ]
+			    },
+			    "donnees_uemoa_large_has_smig_uemoa_2024": {
+			      "Binding": {
+			        "ConceptualEntity": "donnees_uemoa_large"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "donnees_uemoa_large": {
+			          "Target": {
+			            "Entity": "donnees_uemoa_large"
+			          }
+			        },
+			        "smig_uemoa_2024": {
+			          "Target": {
+			            "Entity": "smig_uemoa_2024"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "donnees_uemoa_large"
+			            },
+			            "Object": {
+			              "Role": "smig_uemoa_2024"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "donnees_uemoa_large_have_smig_uemoa_2024"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "smig_uemoa_2024"
+			            },
+			            "Object": {
+			              "Role": "donnees_uemoa_large"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "smig_uemoa_2024_have_donnees_uemoa_large"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json

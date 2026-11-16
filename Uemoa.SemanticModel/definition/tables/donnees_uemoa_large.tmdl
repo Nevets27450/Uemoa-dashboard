@@ -1,0 +1,176 @@
+table donnees_uemoa_large
+	lineageTag: 6ffa1cc6-956e-4822-97c3-d53f372fc9b7
+
+	/// PIB total pour la dernière année sélectionnée ; alias de Vue PIB.
+	measure PIB_total = [Vue PIB]
+		formatString: #,0,,,.0" Md USD"
+		lineageTag: 3926a40f-8283-4a6b-a3bf-d7d2ba8da7a1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// PIB total divisé par la population totale, dernière année sélectionnée.
+	measure PIB_par_habitant = [Vue PIB habitant]
+		formatString: #,0" USD"
+		lineageTag: d9490e38-7ff3-48d9-b2c5-ce0eecb1a85e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// Importations en % du PIB ; moyenne régionale pondérée par le PIB.
+	measure Import_PIB = [Vue Importations]
+		formatString: 0.0" %"
+		lineageTag: b0735f22-3878-4040-b44c-686bdb9cc7ca
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// Exportations en % du PIB ; moyenne régionale pondérée par le PIB.
+	measure Export_PIB = [Vue Exportations]
+		formatString: 0.0" %"
+		lineageTag: 05a489bb-dc32-4111-b7bd-68adbc9326de
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Rang_PIB_habitant = VAR PaysComparables = FILTER(ALLSELECTED('donnees_uemoa_large'[Pays]), NOT ISBLANK(CALCULATE([PIB_par_habitant]))) RETURN IF(NOT ISBLANK([PIB_par_habitant]), RANKX(PaysComparables, [PIB_par_habitant], , DESC, Skip))
+		formatString: 0
+		displayFolder: Classements
+		lineageTag: f7746ad3-5648-4dee-b93d-4bd855b3ea60
+
+	measure Rang_Import = VAR PaysComparables = FILTER(ALLSELECTED('donnees_uemoa_large'[Pays]), NOT ISBLANK(CALCULATE([Import_PIB]))) RETURN IF(NOT ISBLANK([Import_PIB]), RANKX(PaysComparables, [Import_PIB], , DESC, Skip))
+		formatString: 0
+		displayFolder: Classements
+		lineageTag: 7aaadda2-2def-4e26-bdbc-f804606d81d5
+
+	measure Rang_Export = VAR PaysComparables = FILTER(ALLSELECTED('donnees_uemoa_large'[Pays]), NOT ISBLANK(CALCULATE([Export_PIB]))) RETURN IF(NOT ISBLANK([Export_PIB]), RANKX(PaysComparables, [Export_PIB], , DESC, Skip))
+		formatString: 0
+		displayFolder: Classements
+		lineageTag: 0e4f967f-cd33-4867-bf41-2d1151a314af
+
+	measure Valeur_Indic = VAR Choix = SELECTEDVALUE('KPI'[Indicateur], "PIB") RETURN SWITCH(Choix, "PIB", [PIB_total], "PIB par habitant", [PIB_par_habitant], "Importation", [Import_PIB], "Exportation", [Export_PIB])
+		lineageTag: 2e49be5c-86c6-44db-8cfb-6955fde30bd6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Rang_PIB = VAR PaysComparables = FILTER(ALLSELECTED('donnees_uemoa_large'[Pays]), NOT ISBLANK(CALCULATE([PIB_total]))) RETURN IF(NOT ISBLANK([PIB_total]), RANKX(PaysComparables, [PIB_total], , DESC, Skip))
+		formatString: 0
+		displayFolder: Classements
+		lineageTag: 80d97a84-2f6c-4f5d-9675-50e4e205aa81
+
+	/// Ancienne mesure vide non utilisée par le rapport, conservée pour compatibilité.
+	measure Radar_Data = BLANK()
+		isHidden
+		lineageTag: bc573d51-1620-43c2-914c-0f4e97287bc8
+
+	/// Ancienne mesure vide non utilisée par le rapport, conservée pour compatibilité.
+	measure Mesure = BLANK()
+		isHidden
+		lineageTag: 5d0ec83d-60fd-403b-bafb-9db4ed2a2002
+
+		annotation 43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c = True
+
+	measure Narratif_Rang_Benin = VAR Annee = MAX('donnees_uemoa_large'[Année]) VAR Choix = SELECTEDVALUE('KPI'[Indicateur], "PIB") VAR Valeur = CALCULATE([Valeur_Indic], REMOVEFILTERS('donnees_uemoa_large'[Pays]), 'donnees_uemoa_large'[Pays] = "Bénin") VAR Unite = IF(Choix IN {"Importation","Exportation"}, " % du PIB", " USD") RETURN IF(ISBLANK(Valeur), "Aucune donnée disponible pour le Bénin.", "En " & FORMAT(Annee, "0") & ", le Bénin est au rang " & FORMAT([Rang_Benin], "0") & " pour " & Choix & " : " & FORMAT(Valeur, "#,0.0") & Unite & ".")
+		lineageTag: e189bb09-a097-472f-92fd-92fa88705ac2
+
+	column Pays
+		dataType: string
+		lineageTag: aee40dfb-5807-41b7-91bb-95218d3bd0e0
+		summarizeBy: none
+		sourceColumn: Pays
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code_Pays
+		dataType: string
+		lineageTag: 92c377a8-34c7-4dd9-86a4-35eb6af923ed
+		summarizeBy: none
+		sourceColumn: Code_Pays
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Année d’observation. Ne pas additionner les années.
+	column Année
+		dataType: int64
+		formatString: 0
+		lineageTag: 3f8521b0-29b6-4c8e-8251-227f1da1571e
+		summarizeBy: none
+		sourceColumn: Année
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PIB (USD)'
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 117599d3-978d-4ef0-962e-2ad8a9f62622
+		summarizeBy: none
+		sourceColumn: PIB (USD)
+
+		annotation SummarizationSetBy = User
+
+	column 'PIB par habitant (USD)'
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 1b0a4bc9-df31-416d-9d0d-afffb5fa6717
+		summarizeBy: none
+		sourceColumn: PIB par habitant (USD)
+
+		annotation SummarizationSetBy = User
+
+	column 'Population totale'
+		dataType: int64
+		formatString: #,0
+		lineageTag: 9437a3ac-6c91-4a0b-b89e-e2c0b27f198e
+		summarizeBy: sum
+		sourceColumn: Population totale
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Population masculine'
+		dataType: int64
+		formatString: #,0
+		lineageTag: 7815d560-0da8-49ca-a7c5-04846c154e68
+		summarizeBy: sum
+		sourceColumn: Population masculine
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Population féminine'
+		dataType: int64
+		formatString: #,0
+		lineageTag: 71eff8ea-7aa2-4a35-a31d-318dec63ce22
+		summarizeBy: sum
+		sourceColumn: Population féminine
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Pourcentage du PIB exprimé entre 0 et 100. Ne pas sommer les ratios.
+	column Exportations
+		dataType: double
+		formatString: 0.0" %"
+		lineageTag: 2437a88d-9d10-4d24-9be1-fa196f8543d2
+		summarizeBy: none
+		sourceColumn: Exportations
+
+		annotation SummarizationSetBy = User
+
+	/// Pourcentage du PIB exprimé entre 0 et 100. Ne pas sommer les ratios.
+	column Importations
+		dataType: double
+		formatString: 0.0" %"
+		lineageTag: 285f7158-41da-4aee-a5b3-7b45b3f46d8b
+		summarizeBy: none
+		sourceColumn: Importations
+
+		annotation SummarizationSetBy = Automatic
+
+	partition donnees_uemoa_large = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DossierDonnees & "\donnees_uemoa_large.csv"), [Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Entetes = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Types = Table.TransformColumnTypes(Entetes, {{"Pays", type text}, {"Code_Pays", type text}, {"Année", Int64.Type}, {"PIB (USD)", type number}, {"PIB par habitant (USD)", type number}, {"Population totale", Int64.Type}, {"Population masculine", Int64.Type}, {"Population féminine", Int64.Type}, {"Exportations (% PIB)", type number}, {"Importations (% PIB)", type number}}, "en-US"),
+				    Renommees = Table.RenameColumns(Types, {{"Exportations (% PIB)", "Exportations"}, {"Importations (% PIB)", "Importations"}})
+				in
+				    Renommees
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation

@@ -1,0 +1,5 @@
+/// Dossier local contenant donnees_uemoa_large.csv et smig_uemoa_2025.csv. À configurer après clonage.
+expression DossierDonnees = "H:\Downloads" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 4462e9dd-38cb-4d46-b08b-6a09567823de
+
+	annotation PBI_ResultType = Text

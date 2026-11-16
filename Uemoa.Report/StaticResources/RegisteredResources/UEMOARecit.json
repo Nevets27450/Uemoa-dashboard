@@ -1,0 +1,38 @@
+{
+  "name": "UEMOA Recit",
+  "dataColors": [
+    "#C58A25",
+    "#4878A8",
+    "#087F78",
+    "#AB657E",
+    "#7C6AB1",
+    "#D47743",
+    "#398C65",
+    "#569BA8"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#163536",
+  "tableAccent": "#087F78",
+  "textClasses": {
+    "callout": {
+      "fontFace": "Segoe UI",
+      "fontSize": 28,
+      "color": "#163536"
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 14,
+      "color": "#163536"
+    },
+    "header": {
+      "fontFace": "Segoe UI",
+      "fontSize": 12,
+      "color": "#163536"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 11,
+      "color": "#526B6B"
+    }
+  }
+}

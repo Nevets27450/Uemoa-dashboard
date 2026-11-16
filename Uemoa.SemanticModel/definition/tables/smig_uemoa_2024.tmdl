@@ -1,0 +1,80 @@
+table smig_uemoa_2024
+	lineageTag: 2113c41f-c8ec-4cfa-8267-b154cfe094bb
+
+	/// SMIG annualisé de la source 2025, converti au taux fixe historique de 564,98 FCFA/USD. Moyenne simple si plusieurs pays.
+	measure 'SMIG annuel USD' = AVERAGE('smig_uemoa_2024'[SMIG_Année])
+		formatString: #,0" USD"
+		lineageTag: f84a5b00-74ea-4a8c-8ada-ba532a1d8bf9
+
+	column Pays
+		dataType: string
+		lineageTag: 3797fbde-7d66-4656-9527-452b77bf7310
+		summarizeBy: none
+		sourceColumn: Pays
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code
+		dataType: string
+		lineageTag: cadca2be-e191-498c-9af5-217185bed917
+		summarizeBy: none
+		sourceColumn: Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column SMIG_FCFA
+		dataType: double
+		formatString: 0
+		lineageTag: 101a330c-a1e5-4af4-9352-331a9a273768
+		summarizeBy: none
+		sourceColumn: SMIG_FCFA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année
+		dataType: int64
+		formatString: 0
+		lineageTag: 86368ea2-ee48-48a8-adfc-cb6bfd152df3
+		summarizeBy: none
+		sourceColumn: Année
+
+		annotation SummarizationSetBy = Automatic
+
+	column SMIG_EUR
+		dataType: double
+		lineageTag: 47c9530c-5924-432d-bec6-f7c784f71f94
+		summarizeBy: none
+		sourceColumn: SMIG_EUR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// Conversion à taux fixe historique de 564,98 FCFA/USD ; pas un taux courant.
+	column SMIG_USD = smig_uemoa_2024[SMIG_FCFA] / 564.98
+		formatString: 0.00
+		lineageTag: e3eaafce-96cd-47f1-aaef-abd298ae69a3
+		summarizeBy: none
+
+		annotation SummarizationSetBy = User
+
+	column SMIG_Année = smig_uemoa_2024[SMIG_USD] *12.0
+		formatString: 0.00
+		lineageTag: 606289c2-4847-42be-8d9f-b817cfaa0520
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition smig_uemoa_2024 = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DossierDonnees & "\smig_uemoa_2025.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Entetes = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Types = Table.TransformColumnTypes(Entetes, {{"Pays", type text}, {"Code", type text}, {"SMIG_FCFA", type number}, {"Année", Int64.Type}, {"SMIG_EUR", type number}}, "en-US")
+				in
+				    Types
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
